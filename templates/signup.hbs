@@ -87,36 +87,38 @@
     </style>
 </head>
 
-<body>
+  <div class="form-container">
+    <h2>Sign Up</h2>
+    <form action="/signup" method="post">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required autocomplete="off" />
 
-    <div class="form-container">
-        <h2>Sign Up</h2>
-        <form action="/signup" method="post">
-            <label for="name">Username:</label>
-            <input type="text" id="name" name="name" required autocomplete="off"/>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required autocomplete="off"/>
-            <input type="submit" value="Sign Up" />
-        </form>
-        <div class="form-group">
-            <p>Already have an Account? <a href="/login">Login</a></p>
-        </div>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" required autocomplete="off" />
+
+      <input type="submit" value="Sign Up" />
+    </form>
+    <div class="form-group">
+      <p>Already have an Account? <a href="/login">Login</a></p>
     </div>
-    <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        const form = document.querySelector('form');
-        const passwordInput = document.getElementById('password');
+  </div>
 
-        form.addEventListener('submit', function (event) {
-            const password = passwordInput.value;
-            
-            if (password.length < 7) {
-                event.preventDefault();
-                alert('Password must be at least 7 characters long.');
-            }
-        });
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.querySelector('form');
+      const passwordInput = document.getElementById('password');
+
+      form.addEventListener('submit', function (event) {
+        const password = passwordInput.value;
+
+        if (password.length < 7) {
+          event.preventDefault();
+          alert('Password must be at least 7 characters long.');
+        }
+      });
     });
-</script>
+  </script>
+
 </body>
 
 </html>

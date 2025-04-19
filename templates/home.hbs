@@ -45,15 +45,42 @@
         .logout-button:hover {
             background-color: #145b9c;
         }
+        .success-message {
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+            font-weight: bold;
+        }
+        
     </style>
 </head>
 <body>
     <div class="home-container">
+        {{#if message}}<div class="success-message">{{message}}</div>{{/if}}
+
+  
         <h1>Welcome to Your Home Page</h1>
         <p>Feel free to explore and enjoy your personalized space.</p>
         <form action="/logout" method="get">
             <button class="logout-button" type="submit">Logout</button>
         </form>
+        <!-- Add inside .home-container -->
+
+<h3>Update Password</h3>
+<form action="/update" method="post">
+  <input type="email" name="email" placeholder="Email" required />
+  <input type="password" name="newPassword" placeholder="New Password" required />
+  <button type="submit">Send Update Link</button>
+</form>
+
+<h3>Delete Account</h3>
+<form action="/delete" method="post">
+  <input type="email" name="email" placeholder="Email" required />
+  <button type="submit">Send Delete Link</button>
+</form>
+
     </div>
 </body>
 </html>
