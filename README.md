@@ -8,12 +8,7 @@ I have created a Login and Registration Form with NodeJS, ExpressJS and MongoDB.
 
 To install and run this project,
 
-You can download the zip file or Clone the Project Repository using Git with the below command:
-```bash
-git clone https://github.com/DhruvAthaide/Login-RegistrationForm-MongoDB.git
-```
-
-Then, open the terminal in the project directory, and run the following command:
+open the terminal in the project directory, and run the following command:
 
 ```bash
   npm install
@@ -34,9 +29,7 @@ Then, you can paste the following address into your browser to access the LoginS
 ```bash
 http://localhost:3000/
 ```
-## Authors
 
-- [@DhruvAthaide](https://github.com/DhruvAthaide)
 
 
 ## Languages & Tools Used:
