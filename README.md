@@ -1,7 +1,6 @@
 
-# Login and Registration Form with MongoDB
-
-I have created a Login and Registration Form with NodeJS, ExpressJS and MongoDB. This is a Basic Version of the Login and Signup Form which I have created using a bit of help from a few Youtube videos.
+# Login and Registration Form with MySQL
+I have created a Login and Registration Form with NodeJS, ExpressJS and MySQL. This is a Basic Version of the Login and Signup Form which I have created using a bit of help from a few Youtube videos.
 
 
 ## Installation
@@ -27,7 +26,7 @@ nodemon src/index.js
 
 Then, you can paste the following address into your browser to access the LoginSignUp Server:
 ```bash
-http://localhost:3000/
+http://localhost:4000/
 ```
 
 
